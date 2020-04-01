@@ -1,0 +1,66 @@
+/*
+variables
+*******************************************************************************/
+/*
+mixins
+*******************************************************************************/
+/*
+base styles
+*******************************************************************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+  body * {
+    border: 1px solid red; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+  a:visited {
+    color: #fff; }
+
+/*
+navigation
+*******************************************************************************/
+.header .nav {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: .5rem;
+  background-color: darkslategrey; }
+  .header .nav .nav_container {
+    display: flex;
+    width: 100%; }
+    .header .nav .nav_container .nav_item {
+      flex: 1;
+      text-align: center;
+      background: #fff; }
+
+/*
+sections
+*******************************************************************************/
+.main {
+  height: 2200px;
+  padding: 0 .5rem; }
+  .main_inner {
+    display: flex;
+    flex-flow: row nowrap; }
+    .main_inner_left {
+      flex: 1; }
+    .main_inner_centre {
+      flex: 2.5; }
+    .main_inner_right {
+      flex: 1; }
+
+/*
+utilities
+*******************************************************************************/
+/*
+grid scss
+*******************************************************************************/
