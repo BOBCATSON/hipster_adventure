@@ -32,7 +32,7 @@ navigation
 .header .nav {
   display: flex;
   flex-flow: row nowrap;
-  padding: .5rem;
+  padding: .5em;
   background-color: darkslategrey; }
   .header .nav .nav_container {
     display: flex;
@@ -46,17 +46,68 @@ navigation
 sections
 *******************************************************************************/
 .main {
-  height: 2200px;
-  padding: 0 .5rem; }
+  display: flex;
+  height: 600px; }
   .main_inner {
     display: flex;
-    flex-flow: row nowrap; }
-    .main_inner_left {
-      flex: 1; }
-    .main_inner_centre {
-      flex: 2.5; }
-    .main_inner_right {
-      flex: 1; }
+    flex-flow: row nowrap;
+    flex: 1; }
+    .main_inner .main_col {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: .5em; }
+      .main_inner .main_col_left {
+        flex: 1; }
+        .main_inner .main_col_left_inner {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1; }
+          .main_inner .main_col_left_inner .player_img {
+            flex: 20%;
+            background-image: url("./../img/blank_user_avatar.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(0.75); }
+          .main_inner .main_col_left_inner .player_name {
+            flex: 40%; }
+            .main_inner .main_col_left_inner .player_name h2 {
+              text-align: center; }
+          .main_inner .main_col_left_inner .player_inventory {
+            flex: 40%; }
+            .main_inner .main_col_left_inner .player_inventory h2 {
+              text-align: center; }
+      .main_inner .main_col_centre {
+        flex: 2.5; }
+        .main_inner .main_col_centre_inner {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1; }
+          .main_inner .main_col_centre_inner .text {
+            flex: 4; }
+          .main_inner .main_col_centre_inner .control {
+            flex: 1; }
+      .main_inner .main_col_right {
+        flex: 1; }
+        .main_inner .main_col_right_inner {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1; }
+          .main_inner .main_col_right_inner .dice_img {
+            flex: 20%;
+            background-image: url("./../img/dice.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(0.75); }
+          .main_inner .main_col_right_inner .dice_roll {
+            flex: 15%; }
+            .main_inner .main_col_right_inner .dice_roll h2 {
+              text-align: center; }
+          .main_inner .main_col_right_inner .info {
+            flex: 65%; }
+            .main_inner .main_col_right_inner .info h2 {
+              text-align: center; }
 
 /*
 utilities
