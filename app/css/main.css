@@ -29,18 +29,21 @@ a {
 /*
 navigation
 *******************************************************************************/
-.header .nav {
-  display: flex;
-  flex-flow: row nowrap;
-  padding: .5em;
-  background-color: darkslategrey; }
-  .header .nav .nav_container {
+.header {
+  background: #c7c7c7; }
+  .header .nav {
     display: flex;
-    width: 100%; }
-    .header .nav .nav_container .nav_item {
-      flex: 1;
-      text-align: center;
-      background: #fff; }
+    flex-flow: row nowrap;
+    padding: .5em; }
+    .header .nav .nav_container {
+      display: flex;
+      width: 100%; }
+      .header .nav .nav_container .nav_item {
+        text-align: center;
+        background: #fff;
+        margin: .5em; }
+        .header .nav .nav_container .nav_item_2 {
+          margin-left: auto; }
 
 /*
 sections
@@ -77,16 +80,6 @@ sections
             flex: 40%; }
             .main_inner .main_col_left_inner .player_inventory h2 {
               text-align: center; }
-      .main_inner .main_col_centre {
-        flex: 2.5; }
-        .main_inner .main_col_centre_inner {
-          display: flex;
-          flex-flow: column nowrap;
-          flex: 1; }
-          .main_inner .main_col_centre_inner .text {
-            flex: 4; }
-          .main_inner .main_col_centre_inner .control {
-            flex: 1; }
       .main_inner .main_col_right {
         flex: 1; }
         .main_inner .main_col_right_inner {
@@ -100,14 +93,34 @@ sections
             background-repeat: no-repeat;
             background-position: center;
             transform: scale(0.75); }
+            .main_inner .main_col_right_inner .dice_img_inner {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
           .main_inner .main_col_right_inner .dice_roll {
-            flex: 15%; }
+            display: flex;
+            transform: scale(0.75);
+            flex: 5%; }
             .main_inner .main_col_right_inner .dice_roll h2 {
               text-align: center; }
+            .main_inner .main_col_right_inner .dice_roll .dice_btn {
+              text-align: center;
+              flex: 1; }
           .main_inner .main_col_right_inner .info {
-            flex: 65%; }
+            flex: 75%; }
             .main_inner .main_col_right_inner .info h2 {
               text-align: center; }
+      .main_inner .main_col_centre {
+        flex: 2.5; }
+        .main_inner .main_col_centre_inner {
+          display: flex;
+          flex-flow: column nowrap;
+          flex: 1; }
+          .main_inner .main_col_centre_inner .text {
+            flex: 9; }
+          .main_inner .main_col_centre_inner .control {
+            flex: 1; }
 
 /*
 utilities
